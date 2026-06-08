@@ -1,0 +1,33 @@
+name: Deploy on Git Push
+
+#trigger the workflow on push to the main branch
+on:
+  push:
+    branches:
+      - main
+
+#run this job
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Deploy on ExCloud
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: 210.79.128.168
+          username: ubuntu
+          key: ${{ secrets.private_key }}
+          script: |
+            # CD /home/ubuntu/Next-Auth
+            cd /home/ubuntu/Next-Auth
+
+            # git pull
+            git pull origin main
+            # npm install
+            npm install
+            npm run build
+            # pm2 restart all
+            pm2 restart all 
