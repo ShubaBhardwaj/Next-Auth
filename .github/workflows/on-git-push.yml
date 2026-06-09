@@ -20,7 +20,6 @@ jobs:
           host: 210.79.128.168
           username: ubuntu
           key: ${{ secrets.PRIVATE_KEY }}
-          passphrase: ${{ secrets.PRIVATE_KEY_PASSPHRASE }}
           script: |
             # CD /home/ubuntu/Next-Auth
             cd /home/ubuntu/Next-Auth
