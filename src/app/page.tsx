@@ -16,7 +16,7 @@ export default function Home() {
 
         <div className="flex flex-col items-center gap-4 sm:items-start">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-50 sm:text-5xl">
-            Welcome to the Supermen NextAut Boilerplate!
+            Welcome to the Supermen NextAut Boilerplate
           </h1>
           <p className="max-w-md text-lg text-zinc-400">
             Get started by logging into your account or creating a new one today.
