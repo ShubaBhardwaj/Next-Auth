@@ -30,3 +30,6 @@ jobs:
             npm run build
             # pm2 restart all
             pm2 restart all 
+
+      - name: debug
+        run: ssh -v -i ~/.ssh/id_ed25521_github_action ubuntu@210.79.129.181
