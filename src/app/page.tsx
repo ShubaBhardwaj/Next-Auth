@@ -27,7 +27,7 @@ export default function Home() {
           {/* Login Button - Solid Primary Style */}
           <a
             href="/login"
-            className="flex h-12 w-full items-center justify-center rounded-full bg-white px-8 text-black transition-colors hover:bg-zinc-200 md:w-[158px]"
+            className="flex h-12 w-full items-center justify-center rounded-full bg-white px-8 text-black transition-colors hover:bg-zinc-200 md:w-39.5"
           >
             Login
           </a>
@@ -35,7 +35,7 @@ export default function Home() {
           {/* Register Button - Outlined Secondary Style */}
           <a
             href="/register"
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-zinc-700 px-8 text-white transition-colors hover:bg-zinc-900 md:w-[158px]"
+            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-zinc-700 px-8 text-white transition-colors hover:bg-zinc-900 md:w-39.5"
           >
             Register
           </a>
