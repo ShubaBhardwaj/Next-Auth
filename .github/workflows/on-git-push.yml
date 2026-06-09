@@ -27,4 +27,5 @@ jobs:
             git pull origin main
 
             npm install
-            pm2 start npm --name "next-app" -- run dev
+            npm run build
+            pm2 restart next-app || pm2 start npm --name "next-app" -- start
